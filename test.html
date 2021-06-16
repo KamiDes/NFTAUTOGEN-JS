@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html> 
+    <head> 
+
+        <title>cell padding</title> 
+        <style> 
+            .gfg {
+                width:auto;
+                text-align:center;
+                padding:20px;
+            }
+            img {
+                width: 20%;
+                height: 100%;
+                object-fit: contain;
+            }
+            img
+            {
+                position:absolute;
+                top: 0px;
+                left: 0px;
+            }
+            #layer1
+            {
+            z-index: 40;
+            }
+            #layer2
+            {
+            z-index: 20;
+            }
+
+            #layer3
+            {
+            z-index: 30;
+            }
+        </style> 
+        </head> 
+        <body> 
+        <div class = "gfg">
+                <p>
+            <script type="text/javascript">
+        //create an array of images
+        var images = new Array("cherry.png", "joint.png", "squid.png","tophat.png", "beanie.png");
+        var images2 = new Array("cherry.png", "joint.png", "squid.png","tophat.png", "beanie.png");
+        var images3 = new Array("cherry.png", "joint.png", "squid.png","tophat.png", "beanie.png");
+        //get the length of images array
+        //and a random number between 0 and the length
+        var length = images.length;
+        var which = Math.round(Math.random()*(length-1));
+        var which2 = Math.round(Math.random()*(length-1));
+        var which2 = Math.round(Math.random()*(length-1));
+        //get the image at the index that matches the random number
+        document.write('<img id="layer1" src="'+images[which]+'" />');
+        document.write('<img id="layer2" src="'+images2[which2]+'" />');
+        document.write('<img id="layer3" src="'+images3[which3]+'" />');
+        </script>
+            </p>
+        </div>
+    </body> 
+</html> 
